@@ -21,7 +21,7 @@ var auth = require(`./middlewares/auth`);
 
 //connect to db
 mongoose.connect(
-  `mongodb://localhost/express-tracker`,
+  process.env.MongoDB,
   {
     useNewUrlParser: true,
     useUnifiedTopology: true,
